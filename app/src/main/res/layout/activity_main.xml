@@ -4,7 +4,7 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="0dp"
+    android:paddingBottom="10dp"
     android:paddingLeft="0dp"
     android:paddingRight="0dp"
     android:paddingTop="0dp"
@@ -15,7 +15,9 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:weightSum="12">
+        android:weightSum="12"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
 
         <LinearLayout
             android:orientation="vertical"
@@ -23,19 +25,21 @@
             android:layout_alignParentTop="true"
             android:background="@color/colorPrimary"
             android:gravity="bottom|right"
-            android:layout_height="160dp">
+            android:layout_height="160dp"
+            android:layout_marginBottom="10dp">
 
             <TextView
-                android:text="567"
+                android:text="0"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/result"
                 android:textSize="48sp"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:paddingBottom="40dp"
+                android:paddingBottom="65dp"
                 android:paddingRight="25dp"
                 android:fontFamily="monospace" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -136,30 +140,30 @@
             android:layout_weight="3">
 
             <Button
-                android:text="7"
+                android:text="1"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:id="@+id/button13"
+                android:id="@+id/button1"
                 android:layout_weight="1"
                 android:textSize="24sp"
                 android:textColor="@android:color/black"
                 android:background="@android:color/transparent" />
 
             <Button
-                android:text="8"
+                android:text="2"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:id="@+id/button14"
+                android:id="@+id/button2"
                 android:layout_weight="1"
                 android:textSize="24sp"
                 android:textColor="@android:color/black"
                 android:background="@android:color/transparent" />
 
             <Button
-                android:text="9"
+                android:text="3"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:id="@+id/button15"
+                android:id="@+id/button3"
                 android:layout_weight="1"
                 android:textSize="24sp"
                 android:textColor="@android:color/black"
@@ -211,5 +215,20 @@
         </LinearLayout>
 
     </LinearLayout>
+
+    <ImageButton
+        android:src="@drawable/equal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/equalButton"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_centerInParent="false"
+        android:layout_alignParentRight="true"
+        android:paddingTop="110dp"
+        android:paddingRight="25dp" />
 
 </RelativeLayout>
